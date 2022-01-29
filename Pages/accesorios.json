@@ -1,0 +1,38 @@
+[
+    {
+      "precio": 800,
+      "id": 1,
+      "title": "Remera Ride",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/cheeky-8181-195728-1-catalog-new.jpg"
+    },
+    {
+      "precio": 950,
+      "id": 2,
+      "title": "Camisa Rosa",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/cheeky-6029-909966-1-catalog-new.jpg"
+    },
+    {
+      "precio": 650,
+      "id": 3,
+      "title": "Camisa Estrellita",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/cheeky-2233-624008-1-catalog-new.jpg"
+    },
+    {
+      "precio": 820,
+      "id": 4,
+      "title": "Remera Espiral",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/cheeky-5728-345728-1-catalog-new.jpg"
+    },
+    {
+      "precio": 1200,
+      "id": 5,
+      "title": "Buzo Negro",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/cheeky-8998-997436-1-catalog-new.jpg"
+    },
+    {
+      "precio": 750,
+      "id": 6,
+      "title": "Pantalon Gris",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/cheeky-4129-887028-1-catalog-new.jpg"
+    }
+  ]

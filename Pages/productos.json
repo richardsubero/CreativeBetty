@@ -1,0 +1,38 @@
+[
+    {
+      "precio": 800,
+      "id": 1,
+      "title": "Buzo Rose Tik",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/new-kids-7794-264988-1-catalog-new.jpg"
+    },
+    {
+      "precio": 950,
+      "id": 2,
+      "title": "Jean Dean beat",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/cheeky-4184-497028-1-catalog-new.jpg"
+    },
+    {
+      "precio": 650,
+      "id": 3,
+      "title": "Shorty Short",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/new-kids-1487-087988-1-catalog-new.jpg"
+    },
+    {
+      "precio": 820,
+      "id": 4,
+      "title": "Remera Heart",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/new-kids-7751-934988-1-catalog-new.jpg"
+    },
+    {
+      "precio": 1200,
+      "id": 5,
+      "title": "Buzo miss Grey",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/new-kids-3761-128988-1-catalog-new.jpg"
+    },
+    {
+      "precio": 750,
+      "id": 6,
+      "title": "Medias Orange",
+      "thumbnailUrl": "https://static.dafiti.com.ar/p/todomoda-6438-755309-1-catalog-new.jpg"
+    }
+  ]

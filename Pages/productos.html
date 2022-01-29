@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../CSS/master.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../Imagenes/Favicon.png" type="image/x-icon">
+
+  <title>Productos</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg " id="mainNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#page-top">
+      </a>
+      <div id="mainContainer">
+
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars ms-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+          <li class="nav-item"><a style="color: hotpink;" class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a style="color: hotpink;" class="nav-link"
+              href="../Pages/accesorios.html">Accesorios</a></li>
+          <li class="nav-item"><a style="color: hotpink;" class="nav-link"
+              href="../Pages/quiensomos.html">Quienes Somos</a></li>
+          <li class="nav-item"><a style="color: hotpink;" class="nav-link" href="../Pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="row" id="productos"></div>
+    </div>
+
+    <template id="template-card">
+      <div class="col-md-2">
+        <div class="card">
+          <img src="" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5>Titulo</h5>
+            <p>precio</p>
+            <button class="btn btn-dark">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total productos</th>
+      <td>10</td>
+      <td>
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+          vaciar todo
+        </button>
+      </td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+          <button class="btn btn-info btn-sm">
+            +
+          </button>
+          <button class="btn btn-danger btn-sm">
+            -
+          </button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+    <div class="container">
+      <h2>Carrito</h2>
+      <hr>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Acción</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+          </tr>
+        </tfoot>
+      </table>
+
+
+
+  </main>
+
+  <div class="b-example-divider"></div>
+
+  <hr class="container">
+
+  <div class="container">
+    <div class="py-5">
+      <div class="row">
+        <div class="col-xl-6 col-sm-12">
+          <h4>Seccion</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a style="color: white;" href="/index.html" class="nav-link p-0">Home</a></li>
+            <li class="nav-item mb-2"><a style="color: white;" href="/Pages/accesorios.html"
+                class="nav-link p-0">Accesorios</a>
+            </li>
+            <li class="nav-item mb-2"><a style="color: white;" href="/Pages/productos.html"
+                class="nav-link p-0">Productos</a></li>
+            <li class="nav-item mb-2"><a style="color: white;" href="/Pages/quiensomos.html"
+                class="nav-link p-0">Quienes Somos</a>
+            </li>
+            <li class="nav-item mb-2"><a style="color: white;" href="/Pages/contacto.html"
+                class="nav-link p-0">Contacto</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-xl-4 col-sm-12 offset-1">
+          <form>
+            <h4>Suscribete a Nuestras Promociones</h4>
+            <p>Enterate de Nuestras Promos Mensualmente</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Marialopez@mail.com">
+              <button class="btn btn-primary" type="button">Suscribirse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2021 C.A. Derechos Reservados.</p>
+        <ul class="list-unstyled d-flex">
+          <a href="https://api.whatsapp.com/send?phone=573016785021&text=Hola,%20quisiera%20información%20sobre%20sus%20Productos,%20Gracias.%20"
+            target="_blank"><img height="50px" width="50px"
+              src="https://spng.pngfind.com/pngs/s/27-271728_computer-icons-telephone-transprent-pink-text-brand-imagem.png"
+              alt="Whatsapp"></a>
+          <a href="https://www.instagram.com/betty.creatives/" target="_blank"><img height="50px" width="50px"
+              src="https://spng.pngfind.com/pngs/s/688-6885265_custom-thumbnail-instagram-01-png-download-instagram-thumbnail.png"
+              alt="Instagram"></a>
+          <a href="https://www.facebook.com/betty.amaris.5" target="_blank"><img height="50px" width="50px"
+              src="https://spng.pngfind.com/pngs/s/436-4366614_facebook-find-us-on-facebook-hd-png-download.png"
+              alt="Facebook"></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <a href="../index.html">Volver</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+
+  <script src="/Js/productos.js"></script>
+
+  <script language="javascript">
+    $(() => init());
+  </script>
+
+</body>
+
+</html>
