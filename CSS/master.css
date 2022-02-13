@@ -70,6 +70,8 @@ p { font-size: 18px; }
 
 h1 { color: hotpink; font-family: 'Sail', cursive; }
 
+.img-fluid { width: auto; height: 225px; max-height: 225px; }
+
 button { color: black; }
 
 .bi { vertical-align: -.125em; fill: currentColor; }
